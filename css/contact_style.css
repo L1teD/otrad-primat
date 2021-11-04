@@ -1,0 +1,118 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	font-family: "Montserrat", sans-serif;
+}
+.side{
+	float: left;
+	top: 0;
+	background-color: rgba(0,0,0,0.7);
+	color: #e0e0e0;
+	position: fixed;
+	z-index: 2;
+	min-height: 100vh;
+	width: 300px;
+	transition: width 0.4s;
+}
+.side h1 {
+	text-transform: uppercase;
+	font-size: 1.5em;
+	margin: 28px 20px;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+.side h1 img{
+	width: 48px;
+	margin-right: 24px;
+}
+.side ul {
+	list-style: none;
+	overflow: hidden;
+}
+.side a {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	padding: 24px 32px;
+	letter-spacing: 1.5px;
+	text-decoration: none;
+	color: #fff;
+}
+.side a i {
+	font-size: 1.2em;
+	margin-right: 32px;
+}
+.side a:hover {
+	background-color: rgba(0,0,0,0.4);
+}
+.side a:active {
+	background-color: rgba(0,0,0,0.6);
+	
+}
+.side button{
+	position: absolute;
+	top: 28px;
+	left: 100%;
+	transform: translateX(0%);
+	box-shadow: 0 2 123px -3px rgba(0,0,0,0.3);
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	outline: none;
+	border: none;
+	width: 40px;
+	height: 40px;
+	font-size: 1.2em;
+	cursor: pointer;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+}
+.side i.fa-chevron-right{
+	display: none;
+}
+.side.closed {
+	width: 87px;
+}
+
+.side.closed i.fa-chevron-right{
+	display: block;
+}
+.side.closed i.fa-chevron-left{
+	display: none;
+}
+.main{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(to top,rgba(108,0,0,0.5),rgba(10,0,0,0.5)), url(https://i.postimg.cc/nhy6c9PS/katana-girl-cut-red-anime-9k-Sj.jpg);
+	background-size: 100%;
+	z-index: 1; 
+	position: absolute; 
+}
+.main-text{
+	position: relative;
+	text-align: center;
+	top: 27%;
+	color: #fff;
+}
+.main-text h1{
+	font-weight: bold;
+	font-size: 4rem;
+	text-transform: uppercase;
+	text-shadow: black 0 0 20px;
+}
+.contacts{
+	position: relative;
+	text-align: center;
+	top: 29%;
+	color: #fff;
+}
+.contacts h1{
+	font-weight: bold;
+	font-size: 2rem;
+	text-transform: uppercase;
+	text-shadow: black 0 0 20px;
+}

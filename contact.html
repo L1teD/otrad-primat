@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ОТРЯД-ПРИМАТ | CONTACT</title>
+	<meta charset="utf-8">
+	<link rel="preload" href="fonts/Comfortaa-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+	<link rel="stylesheet" type="text/css" href="css/contact_style.css">
+	<link rel="shortcut icon" href="images/favicon.png" type="image.png">
+</head>
+<body>
+	<div class="side closed">
+		<h1>
+			<img src="./images/favicon.png" alt="logo image" width="100%">	
+			PRIMAT
+		</h1>
+		<ul>
+			<li><a href="index.html#home" class="active scrollto"><i class="fas fa-home"></i><i>HOME</i></a></li>
+			<li><a href="index.html#community" class="scrollto"><i class="fas fa-comments"></i><i>COMMUNITY</i></a></li>
+			<li><a href="index.html#admin" class="scrollto"><i class="fas fa-user-shield"></i><i>OUR ADMINISTRATION</i></a></li>
+			<li><a href="contact.html"><i class="fas fa-id-card" class="scrollto"></i><i>CONTACTS</i></a></li>
+			<li><a href="https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86"><i class="fas fa-download" class="scrollto"></i><i>DOWNLOAD DISCORD</i></a></li>
+		</ul>
+		<button id="toggleBtn">
+			<i class="fas fa-chevron-right"></i>
+			<i class="fas fa-chevron-left"></i>
+		</button>
+	</div>
+	<script>
+		var side = document.querySelector('.side')
+		var toggleBtn = document.getElementById('toggleBtn')
+		toggleBtn.addEventListener('click', () => {
+			side.classList.toggle('closed')
+		})
+	</script>
+	<div class="main">
+		<div class="main-text">
+			<h1>НАШИ КОНТАКТЫ</h1>
+		</div>
+		<div class="contacts">
+			<h1>L 1 t e  : <br>firetruck@my.asshole</h1>
+			<h1><br>V e l f o y  : <br>suck@my.dick</h1>
+			<h1><br>K o p i K o r m  :  <br>itsso@fucking.deep</h1>
+		</div>
+	</div>
+</body>
+</html>
