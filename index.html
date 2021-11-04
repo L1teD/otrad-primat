@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
 	<title>ОТРЯД-ПРИМАТ | HOME</title>
 	<meta charset="utf-8">
+	<link rel="alternate" media="only screen and (max-width: 640px)" href="mobile/index.html">
 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
@@ -10,7 +11,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
 	<script>
 	SmoothScroll({
-    // Время скролла 400 = 0.4 секунды
+   	// Время скролла 400 = 0.4 секунды
 	    animationTime    : 400,
     // Размер шага в пикселях 
  	   stepSize         : 50,
@@ -51,14 +52,6 @@
   		});
 	});
 	</script>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-QEBBYCYLXG"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-  		function gtag(){dataLayer.push(arguments);}
-  		gtag('js', new Date());
-
-  		gtag('config', 'G-QEBBYCYLXG');
-	</script>
 </head>
 <body>
 	<div class="side closed">
@@ -78,23 +71,22 @@
 			<i class="fas fa-chevron-right"></i>
 			<i class="fas fa-chevron-left"></i>
 		</button>
-	</div>
-	<script>
+		<script>
 		var side = document.querySelector('.side')
 		var toggleBtn = document.getElementById('toggleBtn')
 		toggleBtn.addEventListener('click', () => {
 			side.classList.toggle('closed')
 		})
 	</script>
+	</div>
 	<div class="main" id="home">
 			<div class="text-main">
-			<img src="images/1.png" width="250" height="250">		
+			<img src="images/1.png" width="300vh" height="300vh">		
 			<h1>Отряд-Примат</h1>
 			<p>Лучший Discord сервер</p>
 		</div>
-		<div class="circular-arrow"></div>
+		<div class="line"></div>
 	</div>
-	<div class="line"></div>
 	<div class="first" id="community">
 		<div class="chat">
 			<h1>Здесь тебя ждёт вежливое комьюнити</h1>
@@ -106,8 +98,8 @@
 			<p>Наши админы решат твои проблемы за секунды</p>
 			<img src="images/ban.png">
 		</div>
+		<div class="line"></div>
 	</div>	
-	<div class="line"></div>
 	<div class="second" id="admin">
 		<div class="pidor">
 			<h1>Толерантная администрация</h1>
