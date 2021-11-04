@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+	<title>ОТРЯД-ПРИМАТ | HOME</title>
+	<meta charset="utf-8">
+	<link rel="alternate" media="only screen and (max-width: 640px)" href="mobile/index.html">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+	<script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+	<script>
+	SmoothScroll({
+   	// Время скролла 400 = 0.4 секунды
+	    animationTime    : 400,
+    // Размер шага в пикселях 
+ 	   stepSize         : 50,
+
+    // Дополнительные настройки:
+    
+    // Ускорение 
+  	  accelerationDelta : 30,  
+    // Максимальное ускорение
+   	 accelerationMax   : 2,   
+
+    // Поддержка клавиатуры
+   	 keyboardSupport   : true,  
+    // Шаг скролла стрелками на клавиатуре в пикселях
+  	  arrowScroll       : 50,
+
+    // Pulse (less tweakable)
+    // ratio of "tail" to "acceleration"
+   	 pulseAlgorithm   : true,
+  	  pulseScale       : 4,
+  	  pulseNormalize   : 1,
+
+    // Поддержка тачпада
+  	  touchpadSupport   : true,
+	})
+	</script>
+	<script>
+	$(document).ready(function() {
+   		var margin = 0; // переменная для контроля докрутки
+   		$("a").click(function() { // тут пишите условия, для всех ссылок или для конкретных
+      		$("html, body").animate({
+         		scrollTop: $($(this).attr("href")).offset().top+margin+ "px" // .top+margin - ставьте минус, если хотите увеличить отступ
+      		}, {
+         		duration: 1400, // тут можно контролировать скорость
+         		easing: "swing"
+      		});
+      		return false;
+  		});
+	});
+	</script>
+</head>
+<body>
+	<div class="side closed">
+		<h1>
+			<img src="./images/favicon.png" alt="logo image" width="100%">	
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRIMAT
+		</h1>
+		<div class="border"></div>
+		<ul>
+			<li><a href="#home" class="active scrollto"><i class="fas fa-home"></i><i>HOME</i></a></li>
+			<li><a href="#community" class="scrollto"><i class="fas fa-comments"></i><i>COMMUNITY</i></a></li>
+			<li><a href="#admin" class="scrollto"><i class="fas fa-user-shield"></i><i>OUR ADMINISTRATION</i></a></li>
+			<li><a href="contact.html"><i class="fas fa-id-card" class="scrollto"></i><i>CONTACTS</i></a></li>
+			<li><a href="https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86"><i class="fas fa-download" class="scrollto"></i><i>DOWNLOAD DISCORD</i></a></li>
+		</ul>
+		<button id="toggleBtn">
+			<i class="fas fa-chevron-right"></i>
+			<i class="fas fa-chevron-left"></i>
+		</button>
+		<script>
+		var side = document.querySelector('.side')
+		var toggleBtn = document.getElementById('toggleBtn')
+		toggleBtn.addEventListener('click', () => {
+			side.classList.toggle('closed')
+		})
+	</script>
+	</div>
+	<div class="main" id="home">
+			<div class="text-main">
+			<img src="images/1.png" width="300vh" height="300vh">		
+			<h1>Отряд-Примат</h1>
+			<p>Лучший Discord сервер</p>
+		</div>
+		<div class="line"></div>
+	</div>
+	<div class="first" id="community">
+		<div class="chat">
+			<h1>Здесь тебя ждёт вежливое комьюнити</h1>
+			<p>Ты всегда найдёшь с кем помурчать</p>
+			<img src="images/chat.png" width="500" height="261">
+		</div>
+		<div class="ban">
+			<h1>А так же адекватная администрация</h1>
+			<p>Наши админы решат твои проблемы за секунды</p>
+			<img src="images/ban.png">
+		</div>
+		<div class="line"></div>
+	</div>	
+	<div class="second" id="admin">
+		<div class="pidor">
+			<h1>Толерантная администрация</h1>
+			<p>Мы поддерживаем всех и никого не дадим в обиду</p>
+			<img src="images/pidor.png" width="420" height="303">
+		</div>
+		<div class="pidor">
+			<img src="images/pidor1.png" width="420" height="188">
+		</div>
+		<div class="link">
+			<h1>И всё это на сервере</h1>
+			<h2>Отряд-Примат</h2>
+			<div class="parent">
+				<iframe src="https://discord.com/widget?id=696914346575396875&theme=dark" width="350" height="300" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+				<a href="https://discord.gg/7cCZ8dXGzb"  target="_blank">СТАТЬ ПИДОРАСОМ</a>
+			</div>		
+		</div>
+	</div>
+</body>	
+</html>
